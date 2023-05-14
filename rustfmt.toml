@@ -1,0 +1,6 @@
+control_brace_style = "ClosingNextLine"
+error_on_line_overflow = true
+error_on_unformatted = true
+format_strings = true
+group_imports = "One"
+imports_granularity = "Item"
