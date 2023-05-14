@@ -1,3 +1,5 @@
+//! TODO: Docs.
+
 #![no_std]
 
 #[cfg(feature = "windows")]
