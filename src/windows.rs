@@ -36,14 +36,14 @@ macro_rules! __gen_impl {
                     #[test]
                     #[should_panic = "internal error: entered unreachable code: called \
                                       `Result::unwrap_unreachable` on an `Err` value: Error { \
-                                      code: HRESULT(0x00000000), message: \"Success.\" }"]
+                                      code: HRESULT(0x00000000)"]
                     fn [<test_ $i _unwrap>]() {
                         $i(0).unwrap_unreachable();
                     }
 
                     #[test]
                     #[should_panic = "internal error: entered unreachable code: oops: Error { \
-                                      code: HRESULT(0x00000000), message: \"Success.\" }"]
+                                      code: HRESULT(0x00000000)"]
                     fn [<test_ $i _expect>]() {
                         $i(0).expect_unreachable("oops");
                     }
